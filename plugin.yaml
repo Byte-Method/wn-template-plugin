@@ -1,0 +1,7 @@
+plugin:
+    name:        'zachco.templateplugin::lang.plugin.name'
+    description: 'zachco.templateplugin::lang.plugin.description'
+    author:      'Zachary Schneider'
+    icon:        'oc-icon-puzzle-piece'
+    #iconSvg:     '$/zachco/templateplugin/assets/plugin-icon.svg'
+    homepage:    'https://www.zacharyschneider.ca/'
