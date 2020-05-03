@@ -45,7 +45,12 @@ class ComponentTemplate extends ComponentBase {
 		//$this->addCss('');
 	}
 
-	//public function onRender() {} // This method seems to be required when there is more than one component of the same type on a page, in order for the properties to reflect each component
+	/* This method allows setting properties when the component is rendered.
+	 * E.g.: {% component 'componentTemplate' string='foo' %}
+	 * The `string` property would be overridden with 'foo',
+	 * and could be accessed with $this->property('string');
+	 */
+	//public function onRender() {}
 
 	public function prepareVars() {
 		$this->string = $this->page['string'] = $this->property('string');
